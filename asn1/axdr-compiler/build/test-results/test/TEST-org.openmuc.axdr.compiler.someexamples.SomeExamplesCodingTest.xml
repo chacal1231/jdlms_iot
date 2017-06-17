@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.axdr.compiler.someexamples.SomeExamplesCodingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-17T18:01:20" hostname="mcmahonpc-X450CP" time="0.019">
+<testsuite name="org.openmuc.axdr.compiler.someexamples.SomeExamplesCodingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-17T23:29:26" hostname="mcmahonpc-X450CP" time="0.019">
   <properties/>
   <testcase name="encodingDecoding" classname="org.openmuc.axdr.compiler.someexamples.SomeExamplesCodingTest" time="0.019"/>
   <system-out><![CDATA[0x83 0xfb 0xda 0x08 0x81 0x59 0x00 0x08  0x03 0xfd 0x02 0x0c 0x22 0x00 0x02 0x27  

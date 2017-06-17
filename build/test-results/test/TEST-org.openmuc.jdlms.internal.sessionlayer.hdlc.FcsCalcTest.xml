@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.internal.sessionlayer.hdlc.FcsCalcTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-17T18:01:12" hostname="mcmahonpc-X450CP" time="0.003">
+<testsuite name="org.openmuc.jdlms.internal.sessionlayer.hdlc.FcsCalcTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-17T23:29:19" hostname="mcmahonpc-X450CP" time="0.004">
   <properties/>
-  <testcase name="testFcsCalc" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.FcsCalcTest" time="0.003"/>
+  <testcase name="testFcsCalc" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.FcsCalcTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

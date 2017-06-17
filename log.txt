@@ -1,107 +1,13 @@
-17-06-2017 13:01:38 ====> :STRUCTURE Value: 9 element(s).
-   |- OCTET_STRING Value: 00 00 01 00 00 FF 
-   |- OCTET_STRING Value: 07 E1 06 11 06 0D 01 2B FF 80 00 00 
-   |- No string representation for type NULL_DATA
-   |- No string representation for type NULL_DATA
-   |- OCTET_STRING Value: 07 C8 01 01 03 00 00 00 FF 80 00 00 
-   |- OCTET_STRING Value: 07 C8 01 01 03 00 00 00 FF 80 00 80 
-   |- INTEGER Value: 0
-   |- BOOLEAN Value: false
-   |- ENUMERATE Value: 1
-
-17-06-2017 13:01:38 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 01 08 00 FF 
-   |- DOUBLE_LONG_UNSIGNED Value: 6108319
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: 0
-      |- ENUMERATE Value: 30
-
-
-17-06-2017 13:01:38 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 03 08 00 FF 
-   |- DOUBLE_LONG_UNSIGNED Value: 2562115
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: 0
-      |- ENUMERATE Value: 32
-
-
-17-06-2017 13:01:38 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 02 08 00 FF 
-   |- DOUBLE_LONG_UNSIGNED Value: 921
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: 0
-      |- ENUMERATE Value: 30
-
-
-17-06-2017 13:01:38 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 04 08 00 FF 
-   |- DOUBLE_LONG_UNSIGNED Value: 321994
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: 0
-      |- ENUMERATE Value: 32
-
-
-17-06-2017 13:01:39 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 0D 07 00 FF 
-   |- LONG_INTEGER Value: 10000
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: -4
-      |- ENUMERATE Value: 255
-
-
-17-06-2017 13:01:39 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 0E 07 00 FF 
-   |- LONG_UNSIGNED Value: 6005
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: -2
-      |- ENUMERATE Value: 44
-
-
-17-06-2017 13:01:39 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 20 07 00 FF 
-   |- LONG_UNSIGNED Value: 8
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: -1
-      |- ENUMERATE Value: 35
-
-
-17-06-2017 13:01:39 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 34 07 00 FF 
-   |- LONG_UNSIGNED Value: 8
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: -1
-      |- ENUMERATE Value: 35
-
-
-17-06-2017 13:01:39 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 48 07 00 FF 
-   |- LONG_UNSIGNED Value: 1260
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: -1
-      |- ENUMERATE Value: 35
-
-
-17-06-2017 13:01:39 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 1F 07 00 FF 
-   |- LONG_UNSIGNED Value: 0
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: -3
-      |- ENUMERATE Value: 33
-
-
-17-06-2017 13:01:39 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 33 07 00 FF 
-   |- LONG_UNSIGNED Value: 0
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: -3
-      |- ENUMERATE Value: 33
-
-
-17-06-2017 13:01:40 ====> :STRUCTURE Value: 3 element(s).
-   |- OCTET_STRING Value: 01 01 47 07 00 FF 
-   |- LONG_UNSIGNED Value: 0
-   |- STRUCTURE Value: 2 element(s).
-      |- INTEGER Value: -3
-      |- ENUMERATE Value: 33
-
-
+17-06-2017 18:30:23 ====> :00 00 01 00 00 FF 
+17-06-2017 18:30:23 ====> : , 01 01 01 08 00 FF  , 6108319 ,  , 0 , 30
+17-06-2017 18:30:23 ====> : , 01 01 03 08 00 FF  , 2562115 ,  , 0 , 32
+17-06-2017 18:30:24 ====> : , 01 01 02 08 00 FF  , 921 ,  , 0 , 30
+17-06-2017 18:30:24 ====> : , 01 01 04 08 00 FF  , 321994 ,  , 0 , 32
+17-06-2017 18:30:24 ====> : , 01 01 0D 07 00 FF  , 10000 ,  , -4 , 255
+17-06-2017 18:30:24 ====> : , 01 01 0E 07 00 FF  , 6005 ,  , -2 , 44
+17-06-2017 18:30:24 ====> : , 01 01 20 07 00 FF  , 8 ,  , -1 , 35
+17-06-2017 18:30:24 ====> : , 01 01 34 07 00 FF  , 8 ,  , -1 , 35
+17-06-2017 18:30:24 ====> : , 01 01 48 07 00 FF  , 1264 ,  , -1 , 35
+17-06-2017 18:30:25 ====> : , 01 01 1F 07 00 FF  , 0 ,  , -3 , 33
+17-06-2017 18:30:25 ====> : , 01 01 33 07 00 FF  , 0 ,  , -3 , 33
+17-06-2017 18:30:25 ====> : , 01 01 47 07 00 FF  , 0 ,  , -3 , 33

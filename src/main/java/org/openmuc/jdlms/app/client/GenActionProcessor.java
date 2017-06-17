@@ -42,7 +42,6 @@ import org.openmuc.jdlms.internal.cli.ActionException;
 import org.openmuc.jdlms.internal.cli.ActionListener;
 import org.openmuc.jdlms.internal.cli.ActionProcessor;
 
-
 abstract class GenActionProcessor implements ActionListener {
 
     private static final String DATA_INPUT_FORMAT = "<Data_Type>:<Data>";
@@ -63,10 +62,8 @@ abstract class GenActionProcessor implements ActionListener {
     private static final String LEER_CORRIENTE_L1       = "3/1.1.31.7.0.255/0";
     private static final String LEER_CORRIENTE_L2       = "3/1.1.51.7.0.255/0";
     private static final String LEER_CORRIENTE_L3       = "3/1.1.71.7.0.255/0";
-    private static final String LEER_FECHA              = "8/0.0.1.0.0.255/0";
+    private static final String LEER_FECHA              = "8/0.0.1.0.0.255/1";
     private static final String FILENAME = "/home/mcmahonpc/Desktop/ikusi/jdlms_iot/log.txt";
-
-
     private static final ArrayList<String> OBIS_Val = new ArrayList<String>();
 
 
@@ -150,7 +147,7 @@ abstract class GenActionProcessor implements ActionListener {
             System.out.println(resultData.toString());
 
             try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILENAME,true))) {
-                String ToWrite = (timeStamp +" ====> :" + resultData.toString() + "\n");
+                String ToWrite = (timeStamp +" ====> :" + resultData.toStringSigfox() + "\n");
                 bw.write(ToWrite);
         } catch (IOException e) {
             e.printStackTrace();

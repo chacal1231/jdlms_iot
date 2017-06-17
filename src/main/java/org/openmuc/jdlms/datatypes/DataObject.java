@@ -565,18 +565,9 @@ public class DataObject {
     private String printType(DataObject resultData, int shiftChars) {
         StringBuilder strBuilder = new StringBuilder();
 
-        String shift;
+        String shift = "";
 
-        if (shiftChars > 0) {
-
-            final String formatStr = MessageFormat.format("%{0}s%s", shiftChars);
-            shift = format(formatStr, " ", "|- ");
-        }
-        else {
-            shift = "";
-        }
-
-        String message = format("%s Value: ", resultData.getType().name());
+        String message = format("", resultData.getType().name());
         strBuilder.append(shift).append(message);
 
         if (resultData.isBoolean()) {
@@ -610,12 +601,74 @@ public class DataObject {
         else if (resultData.isComplex() && resultData.getType() != Type.COMPACT_ARRAY) {
             List<DataObject> complex = resultData.getValue();
 
-            strBuilder.append(complex.size()).append(" element(s).");
+            strBuilder.append(complex.size()).append("");
 
             for (DataObject data : complex) {
                 strBuilder.append('\n').append(printType(data, shiftChars + 3));
             }
             strBuilder.append('\n');
+        }
+        else {
+            return String.format("%sNo string representation for type %s", shift, resultData.getType().name());
+        }
+
+        return strBuilder.toString();
+    }
+
+    /**
+     * Returns a string representation of the {@link DataObject}.
+     * 
+     * @return the string representation of the object.
+     */
+    public String toStringSigfox() {
+        return printType2(this, 0);
+    }
+
+    private String printType2(DataObject resultData, int shiftChars) {
+        StringBuilder strBuilder = new StringBuilder();
+
+        String shift = "";
+
+        //String message = format("", resultData.getType().name());
+        //strBuilder.append(shift).append(message);
+
+        if (resultData.isBoolean()) {
+            Boolean boolVal = resultData.getValue();
+            //strBuilder.append(boolVal.toString());
+        }
+        else if (resultData.isNumber()) {
+            Number number = resultData.getValue();
+            strBuilder.append(number.toString());
+        }
+        else if (resultData.getType() == Type.OCTET_STRING) {
+            byte[] octetStr = resultData.getValue();
+            StringBuilder strBuf = new StringBuilder();
+            for (byte b : octetStr) {
+                strBuf.append(String.format("%02X ", b));
+            }
+            strBuilder.append(strBuf.toString()).append("");
+        }
+        else if (resultData.getType() == Type.VISIBLE_STRING) {
+            byte[] visStr = resultData.getValue();
+            strBuilder.append(new String(visStr));
+        }
+        else if (resultData.isBitString()) {
+            BitString biStr = resultData.getValue();
+            //strBuilder.append(Arrays.toString(biStr.getBitString()));
+        }
+        else if (resultData.isCosemDateFormat()) {
+            CosemDateFormat cosemFormat = resultData.getValue();
+            //strBuilder.append(cosemFormat.toCalendar().getTime().toString());
+        }
+        else if (resultData.isComplex() && resultData.getType() != Type.COMPACT_ARRAY) {
+            List<DataObject> complex = resultData.getValue();
+
+            //strBuilder.append(complex.size()).append("");
+
+            for (DataObject data : complex) {
+                strBuilder.append(" , ").append(printType2(data, 1));
+            }
+           // strBuilder.append('\n');
         }
         else {
             return String.format("%sNo string representation for type %s", shift, resultData.getType().name());

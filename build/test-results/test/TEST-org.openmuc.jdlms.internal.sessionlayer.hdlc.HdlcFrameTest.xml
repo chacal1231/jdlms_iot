@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-06-17T18:01:12" hostname="mcmahonpc-X450CP" time="0.01">
+<testsuite name="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-06-17T23:29:19" hostname="mcmahonpc-X450CP" time="0.009">
   <properties/>
   <testcase name="decode_with_decoder" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" time="0.008"/>
   <testcase name="decode1" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" time="0.0"/>
-  <testcase name="decode2" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" time="0.0"/>
+  <testcase name="decode2" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" time="0.001"/>
   <testcase name="decode3" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" time="0.0"/>
   <testcase name="decode4" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" time="0.0"/>
   <testcase name="decode5" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcFrameTest" time="0.0"/>

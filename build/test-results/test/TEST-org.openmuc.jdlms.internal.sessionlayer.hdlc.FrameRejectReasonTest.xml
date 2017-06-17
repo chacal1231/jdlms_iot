@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.internal.sessionlayer.hdlc.FrameRejectReasonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-17T18:01:13" hostname="mcmahonpc-X450CP" time="0.014">
+<testsuite name="org.openmuc.jdlms.internal.sessionlayer.hdlc.FrameRejectReasonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-17T23:29:19" hostname="mcmahonpc-X450CP" time="0.013">
   <properties/>
-  <testcase name="testSymmetry" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.FrameRejectReasonTest" time="0.014"/>
+  <testcase name="testSymmetry" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.FrameRejectReasonTest" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

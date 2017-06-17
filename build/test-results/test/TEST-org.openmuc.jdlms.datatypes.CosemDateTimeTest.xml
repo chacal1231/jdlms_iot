@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.datatypes.CosemDateTimeTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-06-17T18:01:14" hostname="mcmahonpc-X450CP" time="0.042">
+<testsuite name="org.openmuc.jdlms.datatypes.CosemDateTimeTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-06-17T23:29:20" hostname="mcmahonpc-X450CP" time="0.019">
   <properties/>
-  <testcase name="testSymmetry" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.015"/>
+  <testcase name="testSymmetry" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.004"/>
   <testcase name="testDate1" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
   <testcase name="testTime1" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
-  <testcase name="testToCalendar" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.001"/>
+  <testcase name="testToCalendar" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
   <testcase name="test error handling of codem date withe year = 2016, month = 13, day = 13" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
-  <testcase name="test error handling of codem date withe year = 2016, month = 12, day = 32" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.001"/>
-  <testcase name="test error handling of codem date withe year = 99, month = 2, day = 0" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.001"/>
-  <testcase name="test error handling of codem date withe year = 2, month = 66, day = 0" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.001"/>
+  <testcase name="test error handling of codem date withe year = 2016, month = 12, day = 32" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
+  <testcase name="test error handling of codem date withe year = 99, month = 2, day = 0" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
+  <testcase name="test error handling of codem date withe year = 2, month = 66, day = 0" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
   <testcase name="test error handling of codem date withe year = 2, month = 59, day = 77" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
-  <testcase name="calendarOffsetTest" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.001"/>
-  <testcase name="test1" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.001"/>
+  <testcase name="calendarOffsetTest" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
+  <testcase name="test1" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
   <testcase name="test5" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
   <testcase name="testSymmetry2" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
   <testcase name="testSymmetry3" classname="org.openmuc.jdlms.datatypes.CosemDateTimeTest" time="0.0"/>
