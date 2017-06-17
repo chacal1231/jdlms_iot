@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.SelectivAccessServerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-06-17T00:02:24" hostname="mcmahonpc-X450CP" time="0.053">
+<testsuite name="org.openmuc.jdlms.SelectivAccessServerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-06-17T18:01:15" hostname="mcmahonpc-X450CP" time="0.066">
   <properties/>
-  <testcase name="test valid case with DemoClass5" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.028"/>
-  <testcase name="test valid case with DemoClass6" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.004"/>
-  <testcase name="test valid case with DemoClass7" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.004"/>
-  <testcase name="test valid case with DemoClass9" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.003"/>
-  <testcase name="Testing error case with DemoClass " classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.0"/>
-  <testcase name="Testing error case with DemoClass2 " classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.0"/>
-  <testcase name="Testing error case with DemoClass3 DemoClass3" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.001"/>
+  <testcase name="test valid case with DemoClass5" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.034"/>
+  <testcase name="test valid case with DemoClass6" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.007"/>
+  <testcase name="test valid case with DemoClass7" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.005"/>
+  <testcase name="test valid case with DemoClass9" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.005"/>
+  <testcase name="Testing error case with DemoClass " classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.001"/>
+  <testcase name="Testing error case with DemoClass2 " classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.001"/>
+  <testcase name="Testing error case with DemoClass3 DemoClass3" classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.0"/>
   <testcase name="Testing error case with DemoClass4 " classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.0"/>
-  <testcase name="Testing error case with DemoClass8 " classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.0"/>
+  <testcase name="Testing error case with DemoClass8 " classname="org.openmuc.jdlms.SelectivAccessServerTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

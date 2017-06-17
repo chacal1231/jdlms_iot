@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.internal.transportlayer.LocalDataExchangeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-06-17T00:02:23" hostname="mcmahonpc-X450CP" time="0.078">
+<testsuite name="org.openmuc.jdlms.internal.transportlayer.LocalDataExchangeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-06-17T18:01:13" hostname="mcmahonpc-X450CP" time="0.079">
   <properties/>
-  <testcase name="testBaudRateTransformation0[baud rate char 0; expected value 300]" classname="org.openmuc.jdlms.internal.transportlayer.LocalDataExchangeTest" time="0.048"/>
+  <testcase name="testBaudRateTransformation0[baud rate char 0; expected value 300]" classname="org.openmuc.jdlms.internal.transportlayer.LocalDataExchangeTest" time="0.049"/>
   <testcase name="testBaudRateTransformationError2[baud rate char 0; expected value 300]" classname="org.openmuc.jdlms.internal.transportlayer.LocalDataExchangeTest" time="0.005"/>
   <testcase name="testBaudRateTransformation0[baud rate char 1; expected value 600]" classname="org.openmuc.jdlms.internal.transportlayer.LocalDataExchangeTest" time="0.002"/>
   <testcase name="testBaudRateTransformationError2[baud rate char 1; expected value 600]" classname="org.openmuc.jdlms.internal.transportlayer.LocalDataExchangeTest" time="0.003"/>

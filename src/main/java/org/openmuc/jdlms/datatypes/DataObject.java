@@ -593,7 +593,7 @@ public class DataObject {
             for (byte b : octetStr) {
                 strBuf.append(String.format("%02X ", b));
             }
-            strBuilder.append(strBuf.toString()).append(" (hex)");
+            strBuilder.append(strBuf.toString()).append("");
         }
         else if (resultData.getType() == Type.VISIBLE_STRING) {
             byte[] visStr = resultData.getValue();

@@ -58,10 +58,10 @@ Export-Package: org.openmuc.jdlms;version="1.3.0";uses:="org.bouncycas
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
 Bundle-Version: 1.3.0
 Tool: Bnd-3.2.0.201605172007
-Bnd-LastModified: 1497657734000
+Bnd-LastModified: 1497722462000
 Bundle-Name: jDLMS
 Bundle-ManifestVersion: 2
-Created-By: 1.7.0_111 (Oracle Corporation)
+Created-By: 1.7.0_131 (Oracle Corporation)
 Import-Package: javax.crypto,javax.crypto.spec,javax.net,org.bouncycas
  tle.crypto;version="[1.56,2)",org.bouncycastle.crypto.engines;version
  ="[1.56,2)",org.bouncycastle.crypto.macs;version="[1.56,2)",org.bounc
@@ -89,5 +89,5 @@ Import-Package: javax.crypto,javax.crypto.spec,javax.net,org.bouncycas
  nlayer;version="[1.3,2)",org.openmuc.jdlms.settings.client;version="[
  1.3,2)",org.openmuc.jdlms.transportlayer.client;version="[1.3,2)",org
  .openmuc.jrxtx;version="[1.0,2)"
-Bundle-SymbolicName: org.openmuc.jdlms
+Bundle-SymbolicName: org.openmuc.jdlms_iot
 

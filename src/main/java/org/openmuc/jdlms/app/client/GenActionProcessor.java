@@ -28,6 +28,9 @@ import java.util.List;
 import java.util.Vector;
 import java.util.*;
 import java.util.concurrent.TimeoutException;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.text.SimpleDateFormat;
 
 import org.openmuc.jdlms.AccessResultCode;
 import org.openmuc.jdlms.GetResult;
@@ -39,6 +42,7 @@ import org.openmuc.jdlms.internal.cli.ActionException;
 import org.openmuc.jdlms.internal.cli.ActionListener;
 import org.openmuc.jdlms.internal.cli.ActionProcessor;
 
+
 abstract class GenActionProcessor implements ActionListener {
 
     private static final String DATA_INPUT_FORMAT = "<Data_Type>:<Data>";
@@ -47,19 +51,21 @@ abstract class GenActionProcessor implements ActionListener {
     private static final String WRITE_ACTION_KEY = "w";
     private static final String SCAN_OBJECTS_ACTION_KEY = "s";
     private static final String SCAN_LDS_ACTION_KEY = "l";
-    private static final String LEER_ENERGIA_AC_IM      = "3/1.1.1.8.0.255/2";
-    private static final String LEER_ENERGIA_REC_IM     = "3/1.1.3.8.0.255/2";
-    private static final String LEER_ENERGIA_AC_EX      = "3/1.1.2.8.0.255/2";
-    private static final String LEER_ENERGIA_REC_EX     = "3/1.1.4.8.0.255/2";
-    private static final String LEER_FP                 = "3/1.1.13.7.0.255/2";
-    private static final String LEER_FREC               = "3/1.1.14.7.0.255/2";
-    private static final String LEER_TENSION_L1         = "3/1.1.32.7.0.255/2";
-    private static final String LEER_TENSION_L2         = "3/1.1.52.7.0.255/2";
-    private static final String LEER_TENSION_L3         = "3/1.1.72.7.0.255/2";
-    private static final String LEER_CORRIENTE_L1       = "3/1.1.31.7.0.255/2";
-    private static final String LEER_CORRIENTE_L2       = "3/1.1.51.7.0.255/2";
-    private static final String LEER_CORRIENTE_L3       = "3/1.1.71.7.0.255/2";
-    private static final String LEER_FECHA              = "8/0.0.1.0.0.255/2";
+    private static final String LEER_ENERGIA_AC_IM      = "3/1.1.1.8.0.255/0";
+    private static final String LEER_ENERGIA_REC_IM     = "3/1.1.3.8.0.255/0";
+    private static final String LEER_ENERGIA_AC_EX      = "3/1.1.2.8.0.255/0";
+    private static final String LEER_ENERGIA_REC_EX     = "3/1.1.4.8.0.255/0";
+    private static final String LEER_FP                 = "3/1.1.13.7.0.255/0";
+    private static final String LEER_FREC               = "3/1.1.14.7.0.255/0";
+    private static final String LEER_TENSION_L1         = "3/1.1.32.7.0.255/0";
+    private static final String LEER_TENSION_L2         = "3/1.1.52.7.0.255/0";
+    private static final String LEER_TENSION_L3         = "3/1.1.72.7.0.255/0";
+    private static final String LEER_CORRIENTE_L1       = "3/1.1.31.7.0.255/0";
+    private static final String LEER_CORRIENTE_L2       = "3/1.1.51.7.0.255/0";
+    private static final String LEER_CORRIENTE_L3       = "3/1.1.71.7.0.255/0";
+    private static final String LEER_FECHA              = "8/0.0.1.0.0.255/0";
+    private static final String FILENAME = "/home/mcmahonpc/Desktop/ikusi/jdlms_iot/log.txt";
+
 
     private static final ArrayList<String> OBIS_Val = new ArrayList<String>();
 
@@ -80,8 +86,7 @@ abstract class GenActionProcessor implements ActionListener {
         OBIS_Val.add( LEER_CORRIENTE_L1 );      
         OBIS_Val.add( LEER_CORRIENTE_L2 );       
         OBIS_Val.add( LEER_CORRIENTE_L3 );      
-        OBIS_Val.add( LEER_FECHA );              
-
+        OBIS_Val.add( LEER_FECHA );
         actionProcessor = new ActionProcessor(this);
         actionProcessor.start();
     }
@@ -121,7 +126,7 @@ abstract class GenActionProcessor implements ActionListener {
     }
 
     public final void processRead(int ValToRead) throws IOException {
-        //System.out.println("Enter: " + nameFormat());
+        String timeStamp = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
         String requestParameter = OBIS_Val.get(ValToRead);
 
         GetResult result;
@@ -139,10 +144,18 @@ abstract class GenActionProcessor implements ActionListener {
         AccessResultCode resultCode = result.getResultCode();
 
         if (resultCode == AccessResultCode.SUCCESS) {
-            System.out.println("Result Code: " + result.getResultCode());
+            //System.out.println("Result Code: " + result.getResultCode());
 
             DataObject resultData = result.getResultData();
             System.out.println(resultData.toString());
+
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILENAME,true))) {
+                String ToWrite = (timeStamp +" ====> :" + resultData.toString() + "\n");
+                bw.write(ToWrite);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         }
         else {
             System.err.printf("Failed to read. Access result code: %s%n", resultCode);

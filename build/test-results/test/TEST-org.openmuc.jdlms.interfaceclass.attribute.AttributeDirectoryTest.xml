@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.interfaceclass.attribute.AttributeDirectoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-17T00:02:24" hostname="mcmahonpc-X450CP" time="0.01">
+<testsuite name="org.openmuc.jdlms.interfaceclass.attribute.AttributeDirectoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-17T18:01:15" hostname="mcmahonpc-X450CP" time="0.015">
   <properties/>
-  <testcase name="testDirectory1" classname="org.openmuc.jdlms.interfaceclass.attribute.AttributeDirectoryTest" time="0.008"/>
+  <testcase name="testDirectory1" classname="org.openmuc.jdlms.interfaceclass.attribute.AttributeDirectoryTest" time="0.013"/>
   <testcase name="Test illegal combination of classId = 200, attributeId =  and version = 2" classname="org.openmuc.jdlms.interfaceclass.attribute.AttributeDirectoryTest" time="0.0"/>
   <testcase name="Test illegal combination of classId = 15, attributeId =  and version = 99" classname="org.openmuc.jdlms.interfaceclass.attribute.AttributeDirectoryTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
