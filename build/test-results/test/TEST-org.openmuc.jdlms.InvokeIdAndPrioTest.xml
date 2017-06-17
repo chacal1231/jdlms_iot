@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmuc.jdlms.InvokeIdAndPrioTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-17T00:02:24" hostname="mcmahonpc-X450CP" time="0.031">
+  <properties/>
+  <testcase name="invokeIdAndPriorityFor(prioHigh = true, confirmedMode = false) = 0x81, invokeId = 1" classname="org.openmuc.jdlms.InvokeIdAndPrioTest" time="0.027"/>
+  <testcase name="invokeIdAndPriorityFor(prioHigh = true, confirmedMode = true) = 0xC1, invokeId = 1" classname="org.openmuc.jdlms.InvokeIdAndPrioTest" time="0.001"/>
+  <testcase name="invokeIdAndPriorityFor(prioHigh = false, confirmedMode = true) = 0x41, invokeId = 1" classname="org.openmuc.jdlms.InvokeIdAndPrioTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
