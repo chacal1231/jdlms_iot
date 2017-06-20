@@ -1,5 +1,25 @@
-import serial, time
+import serial, time, mmap
 
+#File SETUP
+lines = []
+var = []
+var1 = []
+with open("/home/mcmahonpc/Desktop/ikusi/jdlms_iot/log.txt", "r") as input_file:
+ for line in input_file:
+            if "01 01 01 08 00 FF" in line:
+                for i in range(51,58):
+                    var.append(line[i])
+                    Ene_Ac_Imp = ''.join(map(str, var))
+            elif "01 01 03 08 00 FF" in line:
+                for i in range(51,58):
+                    var1.append(line[i])
+                    Ene_Reac_Imp = ''.join(map(str, var1))
+
+print("La energia activa importada es " + Ene_Ac_Imp)
+print("La energia re-activa importada es " + Ene_Reac_Imp)
+
+'''
+#Serial SETUP
 ser = serial.Serial()
 ser.port = "/dev/ttyUSB7"
 ser.baudrate = 9600
@@ -48,3 +68,4 @@ if ser.isOpen():
 
 else:
     print "cannot open serial port "
+    '''
