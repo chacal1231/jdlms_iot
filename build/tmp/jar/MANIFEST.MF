@@ -58,7 +58,7 @@ Export-Package: org.openmuc.jdlms;version="1.3.0";uses:="org.bouncycas
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
 Bundle-Version: 1.3.0
 Tool: Bnd-3.2.0.201605172007
-Bnd-LastModified: 1497742147000
+Bnd-LastModified: 1498168502000
 Bundle-Name: jDLMS
 Bundle-ManifestVersion: 2
 Created-By: 1.7.0_131 (Oracle Corporation)

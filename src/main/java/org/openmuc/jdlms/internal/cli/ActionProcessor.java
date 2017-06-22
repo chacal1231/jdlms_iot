@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.io.File;
 
 public class ActionProcessor {
 
@@ -20,6 +21,7 @@ public class ActionProcessor {
 
     private final Action helpAction = new Action("h", "print help message");
     private final Action quitAction = new Action("q", "quit the application");
+
 
     public ActionProcessor(ActionListener actionListener) {
         reader = new BufferedReader(new InputStreamReader(System.in));
@@ -52,7 +54,11 @@ public class ActionProcessor {
                 }while(ValToRead <=12);
 
                 ValToRead = 0;
+                //Python lee envía a backend
                 Thread.sleep(5000);
+                File file = new File("../sigfox.txt");
+                file.delete();
+
                 //System.out.println("\n** Enter action key: ");
 
                 /*try {

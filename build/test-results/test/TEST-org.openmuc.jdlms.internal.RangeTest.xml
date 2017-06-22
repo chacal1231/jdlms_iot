@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.internal.RangeTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2017-06-17T23:29:19" hostname="mcmahonpc-X450CP" time="0.058">
+<testsuite name="org.openmuc.jdlms.internal.RangeTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2017-06-22T21:55:13" hostname="mcmahonpc-X450CP" time="0.06">
   <properties/>
-  <testcase name="[0] 10, 20, 15, true (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.004"/>
-  <testcase name="[1] 10, 20, 20, true (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.002"/>
-  <testcase name="[2] 10, 20, 10, true (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.002"/>
-  <testcase name="[3] 10, 20, 30, false (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.002"/>
+  <testcase name="[0] 10, 20, 15, true (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.003"/>
+  <testcase name="[1] 10, 20, 20, true (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.003"/>
+  <testcase name="[2] 10, 20, 10, true (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.003"/>
+  <testcase name="[3] 10, 20, 30, false (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.003"/>
   <testcase name="[4] 10, 20, 2, false (paramIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.002"/>
-  <testcase name="[0] {&quot;lowerBound: &quot;10&quot;, &quot;upperBound&quot;: &quot;29&quot;}, {&quot;lowerBound: &quot;25&quot;, &quot;upperBound&quot;: &quot;737&quot;}, true (rangeIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.001"/>
+  <testcase name="[0] {&quot;lowerBound: &quot;10&quot;, &quot;upperBound&quot;: &quot;29&quot;}, {&quot;lowerBound: &quot;25&quot;, &quot;upperBound&quot;: &quot;737&quot;}, true (rangeIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.0"/>
   <testcase name="[1] {&quot;lowerBound: &quot;10&quot;, &quot;upperBound&quot;: &quot;29&quot;}, {&quot;lowerBound: &quot;29&quot;, &quot;upperBound&quot;: &quot;737&quot;}, true (rangeIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.0"/>
-  <testcase name="[2] {&quot;lowerBound: &quot;10&quot;, &quot;upperBound&quot;: &quot;29&quot;}, {&quot;lowerBound: &quot;88&quot;, &quot;upperBound&quot;: &quot;737&quot;}, false (rangeIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.001"/>
-  <testcase name="[3] {&quot;lowerBound: &quot;12&quot;, &quot;upperBound&quot;: &quot;15&quot;}, {&quot;lowerBound: &quot;1&quot;, &quot;upperBound&quot;: &quot;2&quot;}, false (rangeIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.0"/>
+  <testcase name="[2] {&quot;lowerBound: &quot;10&quot;, &quot;upperBound&quot;: &quot;29&quot;}, {&quot;lowerBound: &quot;88&quot;, &quot;upperBound&quot;: &quot;737&quot;}, false (rangeIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.0"/>
+  <testcase name="[3] {&quot;lowerBound: &quot;12&quot;, &quot;upperBound&quot;: &quot;15&quot;}, {&quot;lowerBound: &quot;1&quot;, &quot;upperBound&quot;: &quot;2&quot;}, false (rangeIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.001"/>
   <testcase name="[4] {&quot;lowerBound: &quot;10&quot;, &quot;upperBound&quot;: &quot;100&quot;}, {&quot;lowerBound: &quot;10&quot;, &quot;upperBound&quot;: &quot;102&quot;}, true (rangeIntersectTest)" classname="org.openmuc.jdlms.internal.RangeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
