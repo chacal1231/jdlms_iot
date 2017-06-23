@@ -83,8 +83,7 @@ abstract class GenActionProcessor implements ActionListener {
         OBIS_Val.add( LEER_TENSION_L3 );        
         OBIS_Val.add( LEER_CORRIENTE_L1 );      
         OBIS_Val.add( LEER_CORRIENTE_L2 );       
-        OBIS_Val.add( LEER_CORRIENTE_L3 );      
-        OBIS_Val.add( LEER_FECHA );
+        OBIS_Val.add( LEER_CORRIENTE_L3 );
         actionProcessor = new ActionProcessor(this);
         actionProcessor.start();
     }
