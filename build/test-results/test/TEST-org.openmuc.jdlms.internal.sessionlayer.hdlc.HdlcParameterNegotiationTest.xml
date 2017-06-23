@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcParameterNegotiationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-22T21:55:13" hostname="mcmahonpc-X450CP" time="0.273">
+<testsuite name="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcParameterNegotiationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-23T16:55:40" hostname="mcmahonpc-X450CP" time="0.875">
   <properties/>
-  <testcase name="testSymmetry" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcParameterNegotiationTest" time="0.272"/>
-  <testcase name="encode" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcParameterNegotiationTest" time="0.001"/>
+  <testcase name="testSymmetry" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcParameterNegotiationTest" time="0.871"/>
+  <testcase name="encode" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcParameterNegotiationTest" time="0.002"/>
   <testcase name="tesEncodeDecodetSymmetry" classname="org.openmuc.jdlms.internal.sessionlayer.hdlc.HdlcParameterNegotiationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

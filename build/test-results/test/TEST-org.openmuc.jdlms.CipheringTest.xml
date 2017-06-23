@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.CipheringTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-06-22T21:55:16" hostname="mcmahonpc-X450CP" time="0.011">
+<testsuite name="org.openmuc.jdlms.CipheringTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-06-23T16:55:47" hostname="mcmahonpc-X450CP" time="0.032">
   <properties/>
-  <testcase name="testKaifaMessages" classname="org.openmuc.jdlms.CipheringTest" time="0.005"/>
-  <testcase name="testDecryptionExampleFromStandard" classname="org.openmuc.jdlms.CipheringTest" time="0.003"/>
-  <testcase name="test_authenticated_and_enrcypted_apdu" classname="org.openmuc.jdlms.CipheringTest" time="0.002"/>
-  <testcase name="testCipheringExampleFromStandard" classname="org.openmuc.jdlms.CipheringTest" time="0.0"/>
-  <testcase name="test_enrcypted_apdu" classname="org.openmuc.jdlms.CipheringTest" time="0.0"/>
+  <testcase name="testKaifaMessages" classname="org.openmuc.jdlms.CipheringTest" time="0.017"/>
+  <testcase name="testDecryptionExampleFromStandard" classname="org.openmuc.jdlms.CipheringTest" time="0.007"/>
+  <testcase name="test_authenticated_and_enrcypted_apdu" classname="org.openmuc.jdlms.CipheringTest" time="0.005"/>
+  <testcase name="testCipheringExampleFromStandard" classname="org.openmuc.jdlms.CipheringTest" time="0.001"/>
+  <testcase name="test_enrcypted_apdu" classname="org.openmuc.jdlms.CipheringTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

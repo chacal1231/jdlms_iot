@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.axdr.compiler.axdrexample.X690AxdrExampleCodingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-22T21:55:22" hostname="mcmahonpc-X450CP" time="0.004">
+<testsuite name="org.openmuc.axdr.compiler.axdrexample.X690AxdrExampleCodingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-23T16:56:10" hostname="mcmahonpc-X450CP" time="0.011">
   <properties/>
-  <testcase name="encodingDecoding" classname="org.openmuc.axdr.compiler.axdrexample.X690AxdrExampleCodingTest" time="0.004"/>
+  <testcase name="encodingDecoding" classname="org.openmuc.axdr.compiler.axdrexample.X690AxdrExampleCodingTest" time="0.011"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

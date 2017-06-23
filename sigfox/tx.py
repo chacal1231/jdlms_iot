@@ -2,7 +2,7 @@ import serial, time, mmap
 
 #File SETUP
 lines = []
-with open("/home/mcmahonpc/Desktop/ikusi/jdlms_iot/log.txt", "r") as input_file:
+with open("../log.txt", "r") as input_file:
  for line in input_file:
             if "01 01 01 08 00 FF" in line:
                 var = line.split(",")
@@ -32,30 +32,30 @@ with open("/home/mcmahonpc/Desktop/ikusi/jdlms_iot/log.txt", "r") as input_file:
                 var13 = line.split(",")
 
 Ener_Ac_Im      = int(var[2])
-Ener_Ac_Im_Es   = int(var[4])
+Ener_Ac_Im_Es   = (int(var[4]) & (2**8-1))
 Hora            = var2[2]
 Ener_Reac_Im    = int(var3[2])
-Ener_Reac_Im_Es = int(var3[4])
+Ener_Reac_Im_Es = (int(var3[4]) & (2**8-1))
 Ener_Ac_Ex      = int(var4[2])
-Ener_Ac_Ex_Es   = int(var4[4])
+Ener_Ac_Ex_Es   = (int(var4[4]) & (2**8-1))
 Ener_Reac_Ex    = int(var5[2])
-Ener_Reac_Ex_Es = int(var5[4])
+Ener_Reac_Ex_Es = (int(var5[4]) & (2**8-1))
 FP              = int(var6[2])
-FP_Es           = int(var6[4])
+FP_Es           = (int(var6[4]) & (2**8-1))
 Frec            = int(var7[2])
-Frec_Es         = int(var7[4])
+Frec_Es         = (int(var7[4]) & (2**8-1))
 Ten_l1          = int(var8[2])
-Ten_l1_Es       = int(var8[4])
+Ten_l1_Es       = (int(var8[4]) & (2**8-1))
 Ten_l2          = int(var9[2])
-Ten_l2_Es       = int(var9[4])
+Ten_l2_Es       = (int(var9[4]) & (2**8-1))
 Ten_l3          = int(var10[2])
-Ten_l3_Es       = int(var10[4])
+Ten_l3_Es       = (int(var10[4]) & (2**8-1))
 Corri_l1        = int(var11[2])
-Corri_l1_Es     = int(var11[4])
+Corri_l1_Es     = (int(var11[4]) & (2**8-1))
 Corri_l2        = int(var12[2])
-Corri_l2_Es     = int(var12[4])
+Corri_l2_Es     = (int(var12[4]) & (2**8-1))
 Corri_l3        = int(var13[2])
-Corri_l3_Es     = int(var13[4])
+Corri_l3_Es     = (int(var13[4]) & (2**8-1))
 #print("Hora "+ Hora.replace(" ", ""))
 #print("Energia Activa importada " + str(hex(Ener_Ac_Im)[2:]).upper() + " Escala " + str(hex(Ener_Ac_Im_Es)[2:]))
 
@@ -67,11 +67,10 @@ str(hex(Ten_l1)[2:]) + str(hex(Ten_l1_Es)[2:]) + str(hex(Ten_l2)[2:]) + str(hex(
 str(hex(Ten_l3)[2:]) + str(hex(Ten_l3_Es)[2:]) + str(hex(Corri_l1)[2:]) + str(hex(Corri_l1_Es)[2:]) + \
 str(hex(Corri_l2)[2:]) + str(hex(Corri_l2_Es)[2:]) + str(hex(Corri_l3)[2:]) + str(hex(Corri_l3_Es)[2:])
 
-print(x)
 
 #Serial SETUP
 ser = serial.Serial()
-ser.port = "/dev/ttyUSB1"
+ser.port = "/dev/ttyUSB2"
 ser.baudrate = 9600
 ser.bytesize = serial.EIGHTBITS
 ser.parity = serial.PARITY_NONE
@@ -93,16 +92,18 @@ if ser.isOpen():
     try:
         ser.flushInput()
         ser.flushOutput()
-
-        #write data
-        ser.write("AT$GI?\r\n")
-        time.sleep(10)
-        ser.write("AT$RC\r\n")
-        time.sleep(10)
-        ser.write("AT$SF=")
-        ser.write(x)
-        ser.write("\r\n")
-        time.sleep(10)
+        num = 24
+        x = [Cadena[start:start+num] for start in range(0, len(Cadena), num)]
+        for i in range(0,(len(x))):
+            #write data
+            ser.write("AT$GI?\r\n")
+            time.sleep(1)
+            ser.write("AT$RC\r\n")
+            time.sleep(1)
+            ser.write("AT$SF=")
+            ser.write(x[i])
+            ser.write("\r\n")
+            time.sleep(5)
 
         ser.close()
     except Exception, e1:

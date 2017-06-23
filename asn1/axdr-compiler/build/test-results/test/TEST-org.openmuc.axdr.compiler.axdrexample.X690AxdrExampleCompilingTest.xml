@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.axdr.compiler.axdrexample.X690AxdrExampleCompilingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-22T21:55:22" hostname="mcmahonpc-X450CP" time="0.563">
+<testsuite name="org.openmuc.axdr.compiler.axdrexample.X690AxdrExampleCompilingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-23T16:56:10" hostname="mcmahonpc-X450CP" time="1.385">
   <properties/>
-  <testcase name="compiling" classname="org.openmuc.axdr.compiler.axdrexample.X690AxdrExampleCompilingTest" time="0.563"/>
+  <testcase name="compiling" classname="org.openmuc.axdr.compiler.axdrexample.X690AxdrExampleCompilingTest" time="1.385"/>
   <system-out><![CDATA[/home/mcmahonpc/Desktop/ikusi/jdlms_iot/asn1/axdr-compiler/.
 Generated code will be saved in: src/test/java/org/openmuc/axdr/compiler/axdrexample/generated
 ]]></system-out>

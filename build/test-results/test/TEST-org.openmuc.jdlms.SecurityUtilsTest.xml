@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.openmuc.jdlms.SecurityUtilsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-22T21:55:16" hostname="mcmahonpc-X450CP" time="0.003">
+<testsuite name="org.openmuc.jdlms.SecurityUtilsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-23T16:55:47" hostname="mcmahonpc-X450CP" time="0.011">
   <properties/>
-  <testcase name="aesRFC3394KeyWrapTestSymmetry" classname="org.openmuc.jdlms.SecurityUtilsTest" time="0.002"/>
-  <testcase name="aesRFC3394KeyWrapTest" classname="org.openmuc.jdlms.SecurityUtilsTest" time="0.0"/>
-  <testcase name="aesRFC3394KeyUnwrapTest" classname="org.openmuc.jdlms.SecurityUtilsTest" time="0.0"/>
+  <testcase name="aesRFC3394KeyWrapTestSymmetry" classname="org.openmuc.jdlms.SecurityUtilsTest" time="0.008"/>
+  <testcase name="aesRFC3394KeyWrapTest" classname="org.openmuc.jdlms.SecurityUtilsTest" time="0.001"/>
+  <testcase name="aesRFC3394KeyUnwrapTest" classname="org.openmuc.jdlms.SecurityUtilsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -55,7 +55,8 @@ public class ActionProcessor {
 
                 ValToRead = 0;
                 //Python lee envía a backend
-                Thread.sleep(5000);
+                Process p = Runtime.getRuntime().exec("python ../sigfox/tx.py");
+                Thread.sleep(60000);
                 File file = new File("../sigfox.txt");
                 file.delete();
 
