@@ -79,16 +79,19 @@ Corri_l3_Es     = (int(var13[4]) & (2**8-1))
 
 Hora=Hora.replace(" ", "")
 
-Cadena = Hora[:-8] + str(hex(Ener_Ac_Im)[2:]).upper() + str(hex(Ener_Ac_Im_Es)[2:]) + \
-str(hex(Ener_Reac_Im)[2:]) + str(hex(Ener_Reac_Im_Es)[2:]) + str(hex(Ener_Ac_Ex)[2:]) + \
-str(hex(Ener_Ac_Ex_Es)[2:]) + str(hex(Ener_Reac_Ex)[2:]) + str(hex(Ener_Reac_Ex_Es)[2:]) + \
-str(hex(FP)[2:]) + str(hex(FP_Es)[2:]) + str(hex(Frec)[2:]) + str(hex(Frec_Es)[2:]) + \
-str(hex(Ten_l1)[2:]) + str(hex(Ten_l1_Es)[2:]) + str(hex(Ten_l2)[2:]) + str(hex(Ten_l2_Es)[2:]) + \
-str(hex(Ten_l3)[2:]) + str(hex(Ten_l3_Es)[2:]) + str(hex(Corri_l1)[2:]) + str(hex(Corri_l1_Es)[2:]) + \
-str(hex(Corri_l2)[2:]) + str(hex(Corri_l2_Es)[2:]) + str(hex(Corri_l3)[2:]) + str(hex(Corri_l3_Es)[2:])
-
-
-
+Cadena = Hora[:-8]                                                 + \
+         '{:08X}'.format(Ener_Ac_Im)   +  '{:02X}'.format(Ener_Ac_Im_Es)    + \
+         '{:08X}'.format(Ener_Reac_Im) +  '{:02X}'.format(Ener_Reac_Im_Es)  + \
+         '{:08X}'.format(Ener_Ac_Ex)   +  '{:02X}'.format(Ener_Ac_Ex_Es)    + \
+         '{:08X}'.format(Ener_Reac_Ex) +  '{:02X}'.format(Ener_Reac_Ex_Es)  + \
+         '{:04X}'.format(FP)           +  '{:02X}'.format(FP_Es)            + \
+         '{:04X}'.format(Frec)         +  '{:02X}'.format(Frec_Es)          + \
+         '{:04X}'.format(Ten_l1)       +  '{:02X}'.format(Ten_l1_Es)        + \
+         '{:04X}'.format(Ten_l2)       +  '{:02X}'.format(Ten_l2_Es)        + \
+         '{:04X}'.format(Ten_l3)       +  '{:02X}'.format(Ten_l3_Es)        + \
+         '{:04X}'.format(Corri_l1)     +  '{:02X}'.format(Corri_l1_Es)      + \
+         '{:04X}'.format(Corri_l2)     +  '{:02X}'.format(Corri_l2_Es)      + \
+         '{:04X}'.format(Corri_l3)     +  '{:02X}'.format(Corri_l3_Es)
 
 print(Cadena)
 
